@@ -268,6 +268,7 @@ service adsprpcd /system/vendor/bin/adsprpcd
     class main
     user media
     group media
+    disabled
 
 service vendor.per_mgr /system/vendor/bin/pm-service
     class core
