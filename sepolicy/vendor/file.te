@@ -1,4 +1,5 @@
 # ADSPD
+type adspd_data_file;
 type adspd_socket, file_type, mlstrustedobject;
 type sysfs_adspd, fs_type, sysfs_type;
 

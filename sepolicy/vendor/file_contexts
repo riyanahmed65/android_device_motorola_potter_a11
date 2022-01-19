@@ -16,7 +16,7 @@
 
 # ADSP
 /data/adspd(/.*)?                                        u:object_r:adspd_data_file:s0
-/(vendor|system/vendor)/bin/adspd                                        u:object_r:adspd_exec:s0
+/(vendor|system/vendor)/bin/adspd                        u:object_r:adspd_exec:s0
 /dev/ttyHS3                                              u:object_r:adspd_device:s0
 
 # ADSPD
