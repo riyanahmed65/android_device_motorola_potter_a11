@@ -216,6 +216,10 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.recovery
 # Root
 BOARD_ROOT_EXTRA_FOLDERS := persist
 
+# Shim
+TARGET_LD_SHIM_LIBS := \
+    /system/vendor/bin/adspd|libshim_adsp.so \
+
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor

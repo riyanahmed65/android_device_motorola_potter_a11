@@ -12,6 +12,8 @@ allow vendor_init {
 
 allow vendor_init proc_uid_cpupower:file write;
 
+allow vendor_init adspd_data_file:dir { create getattr setattr };
+
 # Allow vendor_init to relabel unlabeled files and directories
 allow vendor_init unlabeled:{ dir file } { getattr relabelfrom };
 
